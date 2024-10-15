@@ -1,0 +1,20 @@
+nav{
+    
+    background-color: rgb(41, 138, 64);
+    margin: 10px;
+    padding: 15px;
+
+}
+a{
+    color:azure;
+    text-decoration:wavy;
+    font-size: 19px;
+    font-weight: bold;
+}
+a:hover{
+    color:rgb(0, 242, 20);
+    text-decoration:wavy;
+    font-size: 20px;
+    font-weight: bold;
+}
+
