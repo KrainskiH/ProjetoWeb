@@ -1,8 +1,8 @@
 nav{
     
     background-color: rgb(41, 138, 64);
-    margin: 10px;
     padding: 15px;
+    border-radius: 8px;
 
 }
 a{
@@ -16,5 +16,8 @@ a:hover{
     text-decoration:wavy;
     font-size: 20px;
     font-weight: bold;
+}
+.elemento{
+    margin: 190px
 }
 
