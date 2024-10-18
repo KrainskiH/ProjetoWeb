@@ -1,25 +1,63 @@
-nav{
-    
-    background-color: rgb(41, 138, 64);
-    padding: 15px;
-    border-radius: 8px;
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 
+
+#menu{
+    background-color: #024b68ec;
+    border-right: #0d4870;
 }
-a{
+#menu nav{
+    max-width: 800px;
+}
+
+#menu a{
+    display: inline-block;
     color:azure;
-    text-decoration:wavy;
+    text-decoration: none;
     font-size: 19px;
     font-weight: bold;
+    padding: 20px;
+    transition: background-color .6s;
+    
 }
-a:hover{
-    color:rgb(0, 242, 20);
-    text-decoration:wavy;
-    font-size: 20px;
-    font-weight: bold;
+#menu a:hover{
+    background-color: rgb(27, 75, 104);
+    border-radius: 10px;
+    transform: scale(1.05);
+
 }
-.elemento{
-    margin: 190px
+#menu a:last-child{
+    float: right;
+    background-color: #043142ec;
+    border-top-left-radius: 24px;
 }
-main{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+h1{
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    color: rgb(10, 0, 100);
+    text-align: center;
+}
+body{
+    font-family: "Cabin", sans-serif;
+    color: #212529;
+    background-color: #fff;
+    text-align: left;
+    margin: 0;
+    background-color: #86b9c9;
+}
+form{
+    background-color: #024b68ec;
+    padding: 15px;
+    margin: 10px left;
+    border-radius: 20px;
+    color: azure;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 700px;
+}
+fieldset{
+    border-radius: 15px;
+    text-align: left;
+    border: 1px solid #fff;
+    padding: 10px;
 }

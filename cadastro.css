@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: auto;
+}
+#menu{
+    background-color: #024b68ec;
+    border-right: #0d4870;
+}
+#menu nav{
+    max-width: 800px;
+}
+
+#menu a{
+    display: inline-block;
+    color:azure;
+    text-decoration: none;
+    font-size: 19px;
+    font-weight: bold;
+    padding: 20px;
+    transition: background-color .6s;
+    
+}
+#menu a:hover{
+    background-color: rgb(27, 75, 104);
+    border-radius: 10px;
+    transform: scale(1.05);
+
+}
+#menu a:last-child{
+    float: right;
+    background-color: #043142ec;
+    border-top-left-radius: 24px;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+form{
+    padding: 150px;
+    margin: 10px left;
+    border-radius: 20px;
+    color: rgb(70, 70, 70);
+    font-size: 15px;
+    max-width: 600px;
+    margin: 20px auto;
+}
+label{
+    margin: 15px;
+    display: block;
+    margin-bottom: 10px;
+    text-align: center;
+}
+input[type="text"], input[type="date"], input[type="CPF"], input[type="password"], input[type="email"], input[type="tel"], input[type="checkbox"], option, select {
+    width: 100%;
+    max-width: 300px; 
+    padding: 10px; 
+    margin: 15px auto;
+    display: block;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    text-align: left; 
+    font-size: 16px;
+}
+fieldset{
+    border-radius: 15px;
+    border: 1px solid #000000;
+    padding: 20px;
+}
+h5{
+    text-align: center;
+    background-color: #0d4870;
+    border-radius: 50px;
+    color: azure;
+    padding: 15px;
+    font-size: 20px;
+}
+button{
+    border-radius: 20px;
+    background-color: #0d4870;
+    color: azure;
+    padding: 10px 15px;
+    margin: 20px auto;
+    border: none;
+    display: block; 
+    border: none; 
+    cursor: pointer; 
+}
+button:hover{
+    transition: .4s;
+    transform: scale(1.05);
+}
