@@ -1,44 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./site.css">
-    <title> Cadastro </title>
+    <link rel="stylesheet" href="./pasta de css/cadastro.css">
+    <title> Login | Saúde + </title>
 </head>
 <body>
     <header>
-        <nav>
-            <a href="./cadastro.html"> CADASTRO </a> |&nbsp;
-            <a href="./consulta.html"> AGENDAMENTO </a> |&nbsp;
-            <a href="./saude.html"> SAÚDE saiba mais </a> |&nbsp;
-            <a href="#" class="elemento"> Unimed </a>
+        <nav id="menu">
+            <a href="./site.html"> HOME </a>
+            <a href="./consulta.html"> AGENDAMENTO </a> 
+            <a href="./saude.html"> SAÚDE saiba mais </a> 
+            <a href="./cadastro.html"> CADASTRO </a>
         </nav>
-</header>
-<h1> Unimed Federação do Paraná </h1> 
-<main>     
-<small>
-     Login do Beneficiário
-       </small>
-       <h3> Realize o seu cadastro no nosso site, siga as intruções a seguir para ter sempre acesso ao nosso site!</h3>
-       <form>
-        <label for="texto">Nome Completo: </label>
-        <input type="text" id="nome" name="texto"> <br>
+    </header>
+        <main>     
+            <section id="formulario">
+                
+                <form>
+                    <fieldset>
+                        <h5> Faça seu cadastro </h5>
+                <label for="nome">Nome Completo: </label>
+                <input type="text" id="nome" name="nome" placeholder="Nome Completo" autofocus> <br>
 
-        <label for="email">E-mail: </label> 
-        <input type="text" id="email" name="email"> <br>
+                <label for="data">Digite a sua data de nascimento: </label>
+                <input type="date" id="data" name="data" placeholder="data do seu Nascimento"> <br>
 
-        <label for="number">Número:  </label>
-        <input type="text" id="numero" name="number> <br>
+                <label for="CPF">CPF do titular do plano: </label>
+                <input type="CPF" id="CPF" name="CPF" placeholder="CPF do titular"> <br>
 
-        
-        <label for="texto"> Nome Completo: </label>
-        <input type="text" id="nome" name="texto">
+                <label for="email">Digite o seu e-mail: </label> 
+                <input type="email" id="email" name="email" placeholder="E-mail para contato"> <br>
 
+                <label for="number"> Digite o seu número de telefone: </label>
+                <input type="tel" id="number" name="number" placeholder="Número de telefone"> <br>
 
+                <label for="senha"> Crie uma senha: </label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha"> <br>
 
-       </form>
+                <label for="noticias"> Deseja notificações sobre atualizações ou novidades? </label>
+                <input type="checkbox" id="noticias" name="noticias" value="noticias"> <br>
+
+                <label for="canal">Qual canal deseja receber as notificações sobre atualizações ou novidades?</label>
+                    <select name="canal" id="canal">
+                    <option value="email"> E-mail</option>
+                    <option value="number">WhatsApp</option>
+                    <option value="no"> Não desejo receber notificações</option>
+                    </select> <br>
+                    <button type="submit" onclick="alert('Formulário enviado')"> Enviar </button>
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <details>
+               <summary> Dados Armazenados</summary> 
+                <table border="1">
+                    <thead> 
+                        <tr>
+                            <th colspan="2">Dados dos Usuários cadastrados</th>
+                        </tr>
+
+                    </thead>
+                    <tbody>
+                        <tr id="nome">
+                            <td>Nome Completo</td>
+                            <td>Nome</td>
+                        </tr>
+                        <tr id="data">
+                            <td>Data de Nascimento</td>
+                            <td>Data</td>
+                        </tr>
+                        <tr id="CPF">
+                            <td>CPF do titular do plano</td>
+                            <td>CPF</td>
+                        </tr>
+                        <tr id="email">
+                            <td>E-mail</td>
+                            <td>E-mail</td>
+                        </tr>
+                        <tr id="number">
+                            <td>Número de telefone</td>
+                            <td>Numero</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td> Botão de excluir dados</td>
+                            <td> Botão de add dados</td>
+                        </tr>
+                    </tfoot>
+            </details>
+            </table>
+        </section>
+
     </main>
-    <script src="./site.js"></script>
+    <footer> <small>&copy;Saúde Mais. Todos os Direitos reservados &copy;2024</small></footer>
+        <script src="./site.js"></script>
 </body>
 </html>
