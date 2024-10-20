@@ -90,3 +90,40 @@ button:hover{
     transition: .4s;
     transform: scale(1.05);
 }
+#rodape{
+    background-color: #1573b3;
+    color: beige;
+    height: 350px;
+    text-align: center;
+    padding: 20px 0;
+    
+}
+#rodape a {
+    color: #f2f2f2;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+#rodape a:hover {
+    color: #1e90ff; 
+  }
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+  }
+.footer-links li {
+    display: inline;
+  }
+.footer-topico{
+    text-decoration: none;
+    display: inline;
+}
+#footer {
+    background-color: #024b68ec;
+    color: beige;
+    text-align: right;
+}
+table{
+    background-color: #bcdff7;
+    text-align: center;
+}
