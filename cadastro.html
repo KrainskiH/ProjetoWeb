@@ -4,98 +4,79 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./pasta de css/cadastro.css">
+    <link rel="icon" href="./img/fotor-20241020112638.ico">
     <title> Login | Saúde + </title>
+    <script src="./js's/cadastro.js"></script>
 </head>
 <body>
     <header>
         <nav id="menu">
-            <a href="./site.html"> HOME </a>
+            <a href="./site.html"> INÍCIO </a>
             <a href="./consulta.html"> AGENDAMENTO </a> 
             <a href="./saude.html"> SAÚDE saiba mais </a> 
             <a href="./cadastro.html"> CADASTRO </a>
         </nav>
     </header>
         <main>     
-            <section id="formulario">
-                
-                <form>
-                    <fieldset>
-                        <h5> Faça seu cadastro </h5>
+        <section id="formulario">
+            <form id="cadastroForm">
+                <fieldset>
+                    <h5> Faça seu cadastro </h5>
                 <label for="nome">Nome Completo: </label>
-                <input type="text" id="nome" name="nome" placeholder="Nome Completo" autofocus> <br>
+                <input type="text" id="nome" name="nome" placeholder="Nome Completo" autofocus required> <br>
 
                 <label for="data">Digite a sua data de nascimento: </label>
-                <input type="date" id="data" name="data" placeholder="data do seu Nascimento"> <br>
+                <input type="date" id="data" name="data" placeholder="data do seu Nascimento" required> <br>
 
                 <label for="CPF">CPF do titular do plano: </label>
-                <input type="CPF" id="CPF" name="CPF" placeholder="CPF do titular"> <br>
+                <input type="text" id="CPF" name="CPF" placeholder="CPF do titular" required> <br>
 
                 <label for="email">Digite o seu e-mail: </label> 
-                <input type="email" id="email" name="email" placeholder="E-mail para contato"> <br>
+                <input type="email" id="email" name="email" placeholder="E-mail para contato" required> <br>
 
                 <label for="number"> Digite o seu número de telefone: </label>
-                <input type="tel" id="number" name="number" placeholder="Número de telefone"> <br>
+                <input type="tel" id="number" name="number" placeholder="Número de telefone" required> <br>
 
                 <label for="senha"> Crie uma senha: </label>
-                <input type="password" id="senha" name="senha" placeholder="Digite sua senha"> <br>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required> <br>
 
                 <label for="noticias"> Deseja notificações sobre atualizações ou novidades? </label>
                 <input type="checkbox" id="noticias" name="noticias" value="noticias"> <br>
 
-                <label for="canal">Qual canal deseja receber as notificações sobre atualizações ou novidades?</label>
-                    <select name="canal" id="canal">
-                    <option value="email"> E-mail</option>
-                    <option value="number">WhatsApp</option>
-                    <option value="no"> Não desejo receber notificações</option>
-                    </select> <br>
-                    <button type="submit" onclick="alert('Formulário enviado')"> Enviar </button>
-                </fieldset>
-            </form>
-        </section>
+            <label for="canal">Qual canal deseja receber as notificações sobre atualizações ou novidades?</label>
+                <select name="canal" id="canal">
+                <option value="email"> E-mail</option>
+                <option value="number">WhatsApp</option>
+                <option value="no"> Não desejo receber notificações</option>
+            </select> <br>
+                <button type="submit" onclick="enviarDados()"> Enviar </button>
+        </fieldset>
+    </form>
+    </section>
         <section>
-            <details>
-               <summary> Dados Armazenados</summary> 
-                <table border="1">
-                    <thead> 
-                        <tr>
-                            <th colspan="2">Dados dos Usuários cadastrados</th>
-                        </tr>
+             <details>
+              <summary> Dados Armazenados</summary> 
+               <table border="1" id="dadosTable">
+                <thead> 
+                  <tr>
+                    <th colspan="5">Dados dos Usuários cadastrados</th>
+                   </tr>
+                  <tr>
+                    <th>Nome</th>
+                    <th>Data de nascimento</th>
+                    <th>Telefone</th>
+                    <th >CPF</th>
+                    <th>E-mail</th>
+                  </tr>
+              </thead>
+               <tbody>
 
-                    </thead>
-                    <tbody>
-                        <tr id="nome">
-                            <td>Nome Completo</td>
-                            <td>Nome</td>
-                        </tr>
-                        <tr id="data">
-                            <td>Data de Nascimento</td>
-                            <td>Data</td>
-                        </tr>
-                        <tr id="CPF">
-                            <td>CPF do titular do plano</td>
-                            <td>CPF</td>
-                        </tr>
-                        <tr id="email">
-                            <td>E-mail</td>
-                            <td>E-mail</td>
-                        </tr>
-                        <tr id="number">
-                            <td>Número de telefone</td>
-                            <td>Numero</td>
-                        </tr>
-                    </tbody>
-                    <tfoot>
-                        <tr>
-                            <td> Botão de excluir dados</td>
-                            <td> Botão de add dados</td>
-                        </tr>
-                    </tfoot>
-            </details>
+               </tbody>
             </table>
-        </section>
-
+            </details>
+    </section>
     </main>
     <footer> <small>&copy;Saúde Mais. Todos os Direitos reservados &copy;2024</small></footer>
-        <script src="./site.js"></script>
+        <script src="./js's/cadastro.js"></script>
 </body>
 </html>
