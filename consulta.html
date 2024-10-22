@@ -8,22 +8,37 @@
     <title> Agendamento da sua consulta </title>
 </head>
 <body>
-    <header>
-        <nav id="menu">
-            <a href="./site.html"> INÍCIO </a> 
-            <a href="./consulta.html"> AGENDAMENTO </a>
-            <a href="./saude.html"> SAÚDE saiba mais </a>
-            <a href="./cadastro.html"> CADASTRO </a>
-        </nav>
+  <header>
+     <nav id="menu">
+       <a href="./site.html"> INÍCIO </a> 
+       <a href="./consulta.html"> AGENDAMENTO </a>
+       <a href="./saude.html"> SAÚDE saiba mais </a>
+       <a href="./cadastro.html"> CADASTRO </a>
+     </nav>
         
-</header>
-<h1> Agendamento da sua consulta! <br> Preencha o formulario a seguir. </h1> 
+  </header>
+    <h1> Agendamento da sua consulta! <br> Preencha o formulario a seguir. </h1> 
 <main>
-
-    <h2>O FORMULARIO </h2> <br>
-    <h2>SERA </h2> <br> 
-    <h2>AQUI</h2>
-    </main>
+  <section id="formulario">
+    <form id="cadastroForm1">
+ <fieldset>
+    <h4>Preencha seu agendamento</h4>
+      <label for="especialidade">Qual especialidade pretende se consultar:</label>
+      <input type="text" id="especialidade" name="especialidade" placeholder="Especialidade que deseja" required><br>
+      <label for="exame">Qual exame pretende realizar:</label>
+      <input type="text" id="exame" name="exame" placeholder="Exame que deseja" required><br>
+      <label for="data">Data do agendamento:</label>
+      <input type="date" id="data" name="data" placeholder="Data do agendamento" required><br>
+      <label for="horario">Horário do agendamento:</label>
+      <input type="text" id="horario" name="horario" placehouder="Horario" required><br>
+      <label for="local">Local da consulta:</label>
+      <input type="text" id="local" name="local" placeholder="Local da consulta" required><br>
+      <label for="contato">Além do cadastro, informe mas algum meio de contato:</label>
+      <input type="text" id="contato" name="contato" placeholder="Meio para contato" required>
+   </fieldset>
+    </form>
+  </section>
+</main>
     <section id="rodape">
         <ul class="email">
             <li> <h5> E-mail </h5></li>
