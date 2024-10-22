@@ -45,3 +45,40 @@ body{
     margin: 0;
     background-color: #86b9c9;
 }
+#rodape{
+    background-color: #1573b3;
+    color: beige;
+    height: 350px;
+    text-align: center;
+    padding: 20px 0;
+    
+}
+
+.email {
+    list-style: none;
+    text-align:center;
+    padding: 10px;
+  }
+.email li {
+    padding: 10px;
+    text-align:center;
+    
+  }
+.footer-topico{
+    text-decoration: none;
+    text-align:center;
+    padding: 10px;
+}
+.horario{
+    list-style: none;
+    padding: 10px;
+}
+.footer{
+    background-color: #024b68ec;
+    color: beige;
+    height: 150px;
+}
+table{
+    background-color: #bcdff7;
+    text-align: center;
+}

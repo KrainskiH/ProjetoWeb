@@ -4,6 +4,10 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto;
 }
+html {
+    scroll-behavior: smooth; /* Ativa rolagem suave */
+}
+
 #menu{
     background-color: #024b68ec;
     border-right: #0d4870;
@@ -70,7 +74,7 @@ fieldset{
 h5{
     text-align: center;
     background-color: #0d4870;
-    border-radius: 50px;
+    border-radius: 40px;
     color: azure;
     padding: 15px;
     font-size: 20px;
@@ -98,30 +102,30 @@ button:hover{
     padding: 20px 0;
     
 }
-#rodape a {
-    color: #f2f2f2;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-#rodape a:hover {
-    color: #1e90ff; 
-  }
 
-.footer-links {
+.email {
     list-style: none;
-    padding: 0;
+    text-align:center;
+    padding: 10px;
   }
-.footer-links li {
-    display: inline;
+.email li {
+    padding: 10px;
+    text-align:center;
+    
   }
 .footer-topico{
     text-decoration: none;
-    display: inline;
+    text-align:center;
+    padding: 10px;
 }
-#footer {
+.horario{
+    list-style: none;
+    padding: 10px;
+}
+.footer{
     background-color: #024b68ec;
     color: beige;
-    text-align: right;
+    height: 150px;
 }
 table{
     background-color: #bcdff7;
