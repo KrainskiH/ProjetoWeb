@@ -103,29 +103,33 @@ button:hover{
     
 }
 
-.email {
+.email,.email li, .horario li {
     list-style: none;
     text-align:center;
     padding: 10px;
-  }
-.email li {
-    padding: 10px;
-    text-align:center;
-    
-  }
-.footer-topico{
+
+}
+
+.footer-topico, .horario{
+    background-color: #1573b3;
     text-decoration: none;
     text-align:center;
     padding: 10px;
 }
-.horario{
-    list-style: none;
-    padding: 10px;
+footer{
+    background-color: #023e56ec;
 }
-.footer{
-    background-color: #024b68ec;
+.footer, .footer li{
+    background-color: #023e56ec;
     color: beige;
-    height: 150px;
+    height: 100px;
+    text-align:left;
+    list-style: none;
+    padding: 13px;
+}
+small{
+    font-size: small;
+
 }
 table{
     background-color: #bcdff7;
