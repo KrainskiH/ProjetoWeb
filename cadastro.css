@@ -94,6 +94,31 @@ button:hover{
     transition: .4s;
     transform: scale(1.05);
 }
+summary{
+    font-size: 20px;
+    color: #0d4870;
+    margin: 15px;
+}
+table{
+    background-color: #bcdff7;
+    text-align: center;
+    margin: 100px auto; /* Centraliza a tabela horizontalmente */
+    padding: 20px;
+    font-size: large;
+    border-radius: 20px;
+    color: #0d4870;
+ 
+}
+th:hover, td:hover{
+    color: #71c6ff;
+}
+th, tr, td{
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: aliceblue;
+    
+}
 #rodape{
     background-color: #1573b3;
     color: beige;
@@ -130,8 +155,4 @@ footer{
 small{
     font-size: small;
 
-}
-table{
-    background-color: #bcdff7;
-    text-align: center;
 }
