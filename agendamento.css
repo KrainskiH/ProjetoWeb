@@ -34,65 +34,29 @@
     background-color: #043142ec;
     border-top-left-radius: 24px;
 }
-
-
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
-
-*{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: auto;
-}
-
-#menu{
-    background-color: #024b68ec;
-    border-right: #0d4870;
-}
-#menu nav{
-    max-width: 800px;
-}
-
-#menu a{
-    display: inline-block;
-    color:azure;
-    text-decoration: none;
-    font-size: 19px;
-    font-weight: bold;
-    padding: 20px;
-    transition: background-color .6s;
-    
-}
-#menu a:hover{
-    background-color: rgb(27, 75, 104);
-    border-radius: 10px;
-    transform: scale(1.05);
-
-}
-#menu a:last-child{
-    float: right;
-    background-color: #043142ec;
-    border-top-left-radius: 24px;
-}
-h4{
+h1{
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    color: rgb(10, 0, 100);
     text-align: center;
-    background-color: #0d4870;
-    border-radius: 30px;  
-    padding: 15px;
-    font-size: 20px;
 }
-
+/*até aqui a parte de cima do site*/
+body{
+    color: #ffffff;
+    background-color: #86b9c9;
+}
 form{
-    padding: 100px;
-    margin: 10px;
-    border-radius: 20px;
-    color: rgb(54, 54, 54);
-    font-size: 20px;
-    max-width: 600px;
-    margin: 20px auto;
+    padding: 100px;/*tamanho formulario*/
+    color: rgb(54,54,54);/*cor das perguntas*/
+    font-size: 20px;/*tamanho das perguntas*/
+    max-width: 600px;/*tamanho formulario*/
+    margin: 20px auto;/*tamanho formulario*/
 }
 label{
-    margin: 20px;
-    display: block;
-    text-align: center;
+    margin: 20px;/*distancia das perguntas*/
+    display: block;/*ajuda a centralzar as perguntas*/
+    text-align: center;/*ajuda a centralizar as perguntas*/
     margin-bottom: 5px; 
 }
 input[type="text"], input[type="text"], input[type="date"], input[type="text"], input[type="text"], input[type="text"], option, select {
@@ -105,30 +69,6 @@ input[type="text"], input[type="text"], input[type="date"], input[type="text"], 
     border-radius: 30px; 
     text-align: center; 
     font-size: 18px;
-}
-
-h1{
-    padding: 2rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50px;
-    color: rgb(10, 0, 100);
-    text-align: center;
-}
-
-body{
-    font-family: "Cabin", sans-serif;
-    color: #212529;
-    background-color: #fff;
-    text-align: left;
-    margin: 0;
-    background-color: #86b9c9;
-}
-h5{
-    text-align: center;
-    background-color: #0d4870;
-    border-radius: 30px;  
-    padding: 15px;
-    font-size: 20px;
 }
 button{
     border-radius: 50px;
@@ -143,23 +83,34 @@ button:hover {
     transition: .4s;
     transform: scale(1.10);
 }
-
+-----
+body{
+    font-family: "Cabin", sans-serif;
+    text-align: left;
+    margin: 30px;
+    color: #ffffff;
+    background-color: #ffffff;
+    background-color: #ffffff;
+}
+h5{
+    text-align: center;
+    background-color: #0d4870;
+    border-radius: 30px;  
+    padding: 15px;
+    font-size: 20px;
+}
 #rodape{
     background-color: #1573b3;
     color: beige(248, 248, 248);
     height: 350px;
     text-align: center;
-    padding: 20px 0;
-    
+    padding: 20px 0;  
 }
-
 .email,.email li, .horario li {
     list-style: none;
     text-align:center;
     padding: 10px;
-
 }
-
 .footer-topico, .horario{
     background-color: #1573b3;
     text-decoration: none;
@@ -179,115 +130,4 @@ footer{
 }
 small{
     font-size: small;
-
-}
-h4{
-    text-align: center;
-    background-color: #0d4870;
-    border-radius: 30px;  
-    padding: 15px;
-    font-size: 20px;
-}
-
-form{
-    padding: 100px;
-    margin: 10px;
-    border-radius: 20px;   
-    color: rgb(54, 54, 54);
-    font-size: 20px;
-    max-width: 600px;
-    margin: 20px auto;
-   
-}
-label{
-    margin: 20px;
-    display: block;
-    text-align: center;
-    margin-bottom: 5px; 
-}
-input[type="text"], input[type="text"], input[type="date"], input[type="text"], input[type="text"], input[type="text"], option, select {
-    width: 90%;
-    max-width: 300px; 
-    padding: 15px; 
-    margin: 15px auto;
-    display: block;
-    border: 2px solid #ffffff; 
-    border-radius: 30px; 
-    text-align: center; 
-    font-size: 18px;
-}
-
-h1{
-    padding: 2rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50px;
-    color: rgb(10, 0, 100);
-    text-align: center;
-}
-
-body{
-    font-family: "Cabin", sans-serif;
-    color: #212529;
-    background-color: #fff;
-    text-align: left;
-    margin: 0;
-    background-color: #86b9c9;
-}
-h5{
-    text-align: center;
-    background-color: #0d4870;
-    border-radius: 30px;  
-    padding: 15px;
-    font-size: 20px;
-}
-button{
-    border-radius: 50px;
-    background-color: #0d4870;
-    color:#ffffff;
-    padding: 15px 60px;
-    margin: 40px auto;
-    display: block; 
-    border: none;    
-}
-button:hover {
-    transition: .4s;
-    transform: scale(1.10);
-}
-
-#rodape{
-    background-color: #1573b3;
-    color: beige(248, 248, 248);
-    height: 350px;
-    text-align: center;
-    padding: 20px 0;
-    
-}
-
-.email,.email li, .horario li {
-    list-style: none;
-    text-align:center;
-    padding: 10px;
-
-}
-
-.footer-topico, .horario{
-    background-color: #1573b3;
-    text-decoration: none;
-    text-align:center;
-    padding: 10px;
-}
-footer{
-    background-color: #023e56ec;
-}
-.footer, .footer li{
-    background-color: #023e56ec;
-    color: beige;
-    height: 100px;
-    text-align:left;
-    list-style: none;
-    padding: 13px;
-}
-small{
-    font-size: small;
-
 }
