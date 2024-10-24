@@ -1,95 +1,121 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
-*{
+
+* {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto;
 }
 
-#menu{
-    background-color: #024b68ec;
-    border-right: #0d4870;
-}
-#menu nav{
-    max-width: 800px;
+body {
+    background-color: #86b9c9;
+    /* Fundo azul claro */
+    color: #212529;
+    /* Texto em cinza escuro */
+    font-family: "Cabin", sans-serif;
+    text-align: left;
+    margin: 0;
 }
 
-#menu a{
+#menu {
+    background-color: #024b68ec;
+    /* Azul escuro */
+    border-right: #0d4870;
+}
+
+#menu a {
     display: inline-block;
-    color:azure;
+    color: azure;
+    /* Cor branca clara */
     text-decoration: none;
     font-size: 19px;
     font-weight: bold;
     padding: 20px;
     transition: background-color .6s;
-    
 }
-#menu a:hover{
+
+#menu a:hover {
     background-color: rgb(27, 75, 104);
+    /* Azul mais escuro ao passar o mouse */
     border-radius: 10px;
     transform: scale(1.05);
+}
 
-}
-#menu a:last-child{
-    float: right;
-    background-color: #043142ec;
-    border-top-left-radius: 24px;
-}
-h1{
+h1 {
     padding: 2rem;
     background-color: rgb(255, 255, 255);
+    /* Fundo branco */
     border-radius: 50px;
     color: rgb(10, 0, 100);
+    /* Azul escuro */
     text-align: center;
 }
-h5{
-    text-align: center;
-    background-color: #0d4870;
-    border-radius: 40px;
-    color: azure;
+
+h2 {
+    color: #024b68ec;
+    /* Azul escuro */
+    margin-bottom: 16px;
+}
+
+main {
+    padding: 20px;
+    background: #ffffff;
+    /* Fundo branco */
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+form {
+    background-color: #024b68ec;
+    /* Azul escuro */
     padding: 15px;
-    font-size: 20px;
+    margin: 10px auto;
+    border-radius: 20px;
+    color: azure;
+    /* Texto em branco claro */
+    font-size: 15px;
+    max-width: 700px;
 }
-body{
-    font-family: "Cabin", sans-serif;
-    color: #212529;
-    background-color: #fff;
-    text-align: left;
-    margin: 0;
-    background-color: #86b9c9;
+
+fieldset {
+    border-radius: 15px;
+    border: 1px solid #fff;
+    padding: 10px;
 }
-#rodape{
+
+#rodape {
     background-color: #1573b3;
+    /* Azul intermediário */
     color: beige;
+    /* Cor bege */
     height: 350px;
     text-align: center;
     padding: 20px 0;
-    
 }
 
-.email,.email li, .horario li {
+.email,
+.horario {
     list-style: none;
-    text-align:center;
-    padding: 10px;
-
-}
-
-.footer-topico, .horario{
-    background-color: #1573b3;
-    text-decoration: none;
-    text-align:center;
+    text-align: center;
     padding: 10px;
 }
-footer{
+
+footer {
     background-color: #023e56ec;
+    /* Azul escuro */
 }
-.footer, .footer li{
-    background-color: #023e56ec;
+
+.footer {
     color: beige;
-    height: 100px;
-    text-align:left;
-    list-style: none;
+    /* Cor bege */
     padding: 13px;
-}
-small{
-    font-size: small;
-
+    text-align: left;
 }
