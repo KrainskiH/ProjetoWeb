@@ -4,10 +4,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto;
 }
-html {
-    scroll-behavior: smooth; /* Ativa rolagem suave */
-}
-
 #menu{
     background-color: #024b68ec;
     border-right: #0d4870;
@@ -74,7 +70,7 @@ fieldset{
 h5{
     text-align: center;
     background-color: #0d4870;
-    border-radius: 40px;
+    border-radius: 50px;
     color: azure;
     padding: 15px;
     font-size: 20px;
@@ -94,31 +90,6 @@ button:hover{
     transition: .4s;
     transform: scale(1.05);
 }
-summary{
-    font-size: 20px;
-    color: #0d4870;
-    margin: 15px;
-}
-table{
-    background-color: #bcdff7;
-    text-align: center;
-    margin: 100px auto; /* Centraliza a tabela horizontalmente */
-    padding: 20px;
-    font-size: large;
-    border-radius: 20px;
-    color: #0d4870;
- 
-}
-th:hover, td:hover{
-    color: #71c6ff;
-}
-th, tr, td{
-    margin: 10px;
-    padding: 10px;
-    border-radius: 20px;
-    background-color: aliceblue;
-    
-}
 #rodape{
     background-color: #1573b3;
     color: beige;
@@ -127,32 +98,32 @@ th, tr, td{
     padding: 20px 0;
     
 }
-
-.email,.email li, .horario li {
-    list-style: none;
-    text-align:center;
-    padding: 10px;
-
-}
-
-.footer-topico, .horario{
-    background-color: #1573b3;
+#rodape a {
+    color: #f2f2f2;
     text-decoration: none;
-    text-align:center;
-    padding: 10px;
-}
-footer{
-    background-color: #023e56ec;
-}
-.footer, .footer li{
-    background-color: #023e56ec;
-    color: beige;
-    height: 100px;
-    text-align:left;
-    list-style: none;
-    padding: 13px;
-}
-small{
-    font-size: small;
+    margin: 0 10px;
+  }
+#rodape a:hover {
+    color: #1e90ff; 
+  }
 
+.footer-links {
+    list-style: none;
+    padding: 0;
+  }
+.footer-links li {
+    display: inline;
+  }
+.footer-topico{
+    text-decoration: none;
+    display: inline;
+}
+#footer {
+    background-color: #024b68ec;
+    color: beige;
+    text-align: right;
+}
+table{
+    background-color: #bcdff7;
+    text-align: center;
 }

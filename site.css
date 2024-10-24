@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 
-*{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: auto;
-}
 
 #menu{
     background-color: #024b68ec;
@@ -40,14 +36,6 @@ h1{
     border-radius: 50px;
     color: rgb(10, 0, 100);
     text-align: center;
-} 
-h5{
-    text-align: center;
-    background-color: #0d4870;
-    border-radius: 40px;
-    color: azure;
-    padding: 15px;
-    font-size: 20px;
 }
 body{
     font-family: "Cabin", sans-serif;
@@ -72,42 +60,4 @@ fieldset{
     text-align: left;
     border: 1px solid #fff;
     padding: 10px;
-}
-
-#rodape{
-    background-color: #1573b3;
-    color: beige;
-    height: 350px;
-    text-align: center;
-    padding: 20px 0;
-    
-}
-
-.email,.email li, .horario li {
-    list-style: none;
-    text-align:center;
-    padding: 10px;
-
-}
-
-.footer-topico, .horario{
-    background-color: #1573b3;
-    text-decoration: none;
-    text-align:center;
-    padding: 10px;
-}
-footer{
-    background-color: #023e56ec;
-}
-.footer, .footer li{
-    background-color: #023e56ec;
-    color: beige;
-    height: 100px;
-    text-align:left;
-    list-style: none;
-    padding: 13px;
-}
-small{
-    font-size: small;
-
 }
