@@ -1,26 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./pasta de css/saude.css">
+    <link rel="stylesheet" href="./saude.css">
     <link rel="icon" href="./img/fotor-20241020112638.ico">
-    <title> Saiba mais sobre a sua Saúde </title>
+    <title> Login | Saúde + </title>
 </head>
 <body>
     <header>
         <nav id="menu">
-            <a href="./site.html"> INÍCIO </a> 
-            <a href="./consulta.html"> AGENDAMENTO </a>
-            <a href="./saude.html"> SAÚDE saiba mais </a>
+            <a href="./site.html"> INÍCIO </a>
+            <a href="./consulta.html"> AGENDAMENTO </a> 
+            <a href="./saude.html"> SAÚDE saiba mais </a> 
             <a href="./cadastro.html"> CADASTRO </a>
+            
         </nav>
-</header>
-<h1> Saiba mais sobre sua saúde. Programas Preventivos e muito mais!
-</h1> 
-<main>   
-    </main>
-    <script src="./site.js"></script>
-    
+    </header>
+
+<body>
+    <h1>Formulário de Saúde Preventiva</h1>
+
+        <section id="formulario">
+            <form id="cadastroForm">
+                <fieldset>
+                    <h5> Saúde Preventiva </h5>
+    <label for="name">Nome Completo:</label>
+    <input type="text" id="name" name="name" placeholder="Insira seu nome" required> <br>
+
+    <label for="age">Idade:</label>
+    <input type="number" id="age" name="age" placeholder="Insira sua idade" min="1" required> <br> 
+
+    <label for="exercise">Faz exercícios regularmente?</label>
+    <select id="exercise" name="exercise" required>
+        <option value="">Selecione</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select> <br>
+
+    <label for="diet">Segue uma dieta equilibrada?</label>
+    <select id="diet" name="diet" required>
+        <option value="">Selecione</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select> <br>
+
+    <label for="checkup">Realiza check-ups médicos regulares?</label>
+    <select id="checkup" name="checkup" required>
+        <option value="">Selecione</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select> <br>
+
+    <label for="vaccination">Está com as vacinas em dia?</label>
+    <select id="vaccination" name="vaccination" required> <br>
+        <option value="">Selecione</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select> <br>
+
+    <label for="mental-health">Como você descreveria sua saúde mental atualmente?</label><br>
+    <textarea id="mental-health" name="mental_health" rows="4" placeholder="Descreva sua saúde mental..."
+        required></textarea><br>
+
+    <label for="hygiene">Cuida da higiene pessoal e ambiental adequadamente?</label>
+    <select id="hygiene" name="hygiene" required> <br>
+        <option value="">Selecione</option>
+        <option value="sim">Sim</option>
+        <option value="nao">Não</option>
+    </select> 
+    <br>
+    <button type="submit" onclick="enviarDados()"> Enviar </button>
+</fieldset>
+</form>
+</section>
+<section id="tabela">
+    <details>
+     <summary> <h5> Dados Armazenados </h5></summary> 
+      <table border="1" id="dadosTable">
+       <thead> 
+         <tr>
+           <th colspan="5">Dados dos Usuários cadastrados</th>
+          </tr>
+         <tr>
+           <th>Nome</th>
+           <th>Data de nascimento</th>
+           <th>Telefone</th>
+           <th >CPF</th>
+           <th>E-mail</th>
+         </tr>
+     </thead>
+      <tbody>
+
+      </tbody>
+   </table>
+   </details>
+</section>
+</main>
+    <section>Alimentação Saudável
+        Uma dieta balanceada é fundamental para a prevenção de várias doenças, como obesidade, diabetes e hipertensão. A
+        escolha de alimentos ricos em nutrientes, como frutas, vegetais, grãos integrais e proteínas magras, ajuda a
+        manter o corpo em bom funcionamento e fortalece o sistema imunológico.
+
+        Exercício Físico Regular
+        A prática regular de atividades físicas, como caminhada, natação ou musculação, auxilia na prevenção de doenças
+        cardíacas, melhora a circulação sanguínea e mantém a saúde muscular e óssea. Além disso, o exercício contribui
+        para o bem-estar mental, aliviando o estresse e a ansiedade.
+
+        Check-ups Regulares
+        Visitas periódicas ao médico ajudam a detectar precocemente qualquer condição de saúde, facilitando o tratamento
+        antes que a doença se agrave. Exames de sangue, pressão arterial e exames específicos para cada faixa etária ou
+        condição são essenciais para manter o corpo saudável.
+
+        Vacinação
+        A imunização é uma das formas mais eficazes de prevenção contra várias doenças infecciosas. Manter o calendário
+        de vacinas atualizado protege tanto o indivíduo quanto a comunidade contra doenças como gripe, hepatite,
+        sarampo, entre outras.
+
+        Saúde Mental
+        Cuidar da saúde mental é tão importante quanto cuidar da saúde física. Manter uma rotina equilibrada, buscar
+        apoio psicológico quando necessário e praticar atividades que proporcionem relaxamento, como meditação ou
+        hobbies, ajuda a prevenir o estresse, ansiedade e depressão.
+
+        Higiene Pessoal e Ambiental
+        Manter bons hábitos de higiene pessoal, como lavar as mãos frequentemente e cuidar da higiene bucal, e cuidados
+        com o ambiente ao redor são essenciais para prevenir infecções e outras doenças.</section>
+
+        <script src="./saude.js"></script>
 </body>
+
 </html>
