@@ -23,7 +23,7 @@ if (key) {
 // Reset da página e QueryParam
 document.getElementById('formInformacao').addEventListener('reset', function (e) {
     e.preventDefault();
-    window.location.href = "./index.html";
+    window.location.href = "./consulta.html"; // Redireciona para a página de consulta
 });
 
 // Cadastro de produtos
@@ -54,15 +54,15 @@ document.getElementById('formInformacao').addEventListener('submit', function (e
 
     // Atualizando o LocalStorage
     localStorage.setItem('dados', JSON.stringify(dados));
-    
-      // Limpar os campos do formulário
-      especialidade.value = '';
-      exame.value = '';
-      data.value = '';
-      horario.value = '';
-      local.value = '';
 
-    window.location.href = "./consulta.html";
+    // Limpar os campos do formulário
+    especialidade.value = '';
+    exame.value = '';
+    data.value = '';
+    horario.value = '';
+    local.value = '';
+
+    window.location.href = "./consulta.html"; // Redireciona após a submissão
 });
 
 // Exibir tabela
@@ -73,28 +73,31 @@ function atualizarTabela() {
     // Exibindo dados na tabela
     dados.forEach((informacao, index) => {
         const linha = document.createElement('tr');
+
         linha.innerHTML = `
-            <td>${informacao.especialidade}</td>
-            <td>${informacao.exame}</td>
-            <td>${informacao.data}</td>
-            <td>${informacao.horario}</td>
-            <td>${informacao.local}</td>
+            <td>${informacao.especialidade || 'N/A'}</td>
+            <td>${informacao.exame || 'N/A'}</td>
+            <td>${informacao.data || 'N/A'}</td>
+            <td>${informacao.horario || 'N/A'}</td>
+            <td>${informacao.local || 'N/A'}</td>
             <td>
                 <a href="?chave=${index}">Editar</a>
                 <a href="#" onclick="removerInformacao(${index})">Excluir</a>
             </td>
         `;
+
         tabela.appendChild(linha);
     });
 }
 
 // Remover produto
 function removerInformacao(index) {
-    dados.splice(index, 1);
-    localStorage.setItem('dados', JSON.stringify(dados));
-    atualizarTabela();
+    if (confirm("Você tem certeza que deseja excluir este item?")) {
+        dados.splice(index, 1);
+        localStorage.setItem('dados', JSON.stringify(dados));
+        atualizarTabela(); // Atualiza a tabela após remoção
+    }
 }
 
 // Atualizar a tabela ao carregar a página
 window.onload = atualizarTabela;
-
