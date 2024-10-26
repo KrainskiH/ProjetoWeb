@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&display=swap');
-
 *{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto;
 }
+
 #menu{
-    background-color: #024b68ec;
+    background-color: #0d4870;
     border-right: #0d4870;
 }
 #menu nav{
@@ -35,57 +34,28 @@
     background-color: #043142ec;
     border-top-left-radius: 24px;
 }
-h1{
-    padding: 2rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 50px;
-    color: rgb(10, 0, 100);
-    text-align: center;
-} 
 body{
+    font-family: "Cabin", sans-serif;
     color: #212529;
+    background-color: #fff;
     text-align: left;
     margin: 0;
     background-color: #c7edf8;
 }
-
-main {
-    padding: 20px;
-    background: #ffffff;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-h2:hover{
-    color:#2e7db1;
-}
-h5{
+h4{
     text-align: center;
     background-color: #0d4870;
-    border-radius: 40px;
     color: azure;
+    border-radius: 40px;  
     padding: 15px;
     font-size: 20px;
 }
-p{
-    text-indent: 40px;
-}
-p, .dicas{
-    padding: 10px;
-    font-size: 18px;
-    margin: 15px
-    
-}
-section {
-    margin-bottom: 20px;
-}
-
 form{
     padding: 150px;
-    margin: 10px left;
+    margin: 10px;
     border-radius: 20px;
-    color: rgb(70, 70, 70);
-    font-size: 15px;
+    color: rgb(54, 54, 54);
+    font-size: 20px;
     max-width: 600px;
     margin: 20px auto;
 }
@@ -95,26 +65,35 @@ label{
     margin-bottom: 10px;
     text-align: center;
 }
-input[type="text"], input[type="number"], option, select, textarea {
+input[type="text"], input[type="number"], select, option, textarea {
     width: 100%;
     max-width: 300px; 
     padding: 10px; 
     margin: 15px auto;
     display: block;
     border: 1px solid #ccc; 
-    border-radius: 5px; 
+    border-radius: 15px;
     text-align: left; 
     font-size: 16px;
 }
 fieldset{
     border-radius: 15px;
-    border: 1px solid #000000;
+    border: rgb(255, 255, 255);
     padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+h1{
+    padding: 2rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    color: rgb(10, 0, 100);
+    text-align: center;
 }
 h5{
     text-align: center;
     background-color: #0d4870;
-    border-radius: 50px;
+    border-radius: 40px;
     color: azure;
     padding: 15px;
     font-size: 20px;
@@ -128,15 +107,38 @@ button{
     border: none;
     display: block; 
     border: none; 
-    cursor: pointer; 
+    cursor: pointer;  
 }
-button:hover{
+button:hover {
     transition: .4s;
-    transform: scale(1.05);
+    transform: scale(1.10);
+}
+summary{
+    font-size: 20px;
+    color: #0d4870;
+    margin: 15px;
 }
 table{
-    background-color: #bcdff7;
+    background-color: rgb(255, 255, 255);
     text-align: center;
+    margin: 100px auto; /* Centraliza a tabela horizontalmente */
+    padding: 20px;
+    font-size: large;
+    border-radius: 20px;
+    color: #0d4870;
+ 
+}
+th:hover, td:hover{
+    color: rgb(53, 137, 233);
+    background-color: #b7dbf3;
+}
+th, tr, td{
+    color: rgb(0, 0, 0);
+    margin: 10px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    
 }
 
 #rodape{
@@ -144,8 +146,7 @@ table{
     color: beige;
     height: 350px;
     text-align: center;
-    padding: auto;
-    margin: auto;
+    padding: 20px 0;
     
 }
 
@@ -161,7 +162,6 @@ table{
     text-decoration: none;
     text-align:center;
     padding: 10px;
-    margin: 0px;
 }
 footer{
     background-color: #023e56ec;
