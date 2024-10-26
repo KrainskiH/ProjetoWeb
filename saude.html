@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./saude.css">
+    <link rel="stylesheet" href="./css/saude.css">
     <link rel="icon" href="./img/fotor-20241020112638.ico">
     <title> Login | Saúde + </title>
 </head>
@@ -14,35 +14,41 @@
             <a href="./consulta.html"> AGENDAMENTO </a> 
             <a href="./saude.html"> SAÚDE saiba mais </a> 
             <a href="./cadastro.html"> CADASTRO </a>
-            
         </nav>
     </header>
 
-<body>
     <h1>Formulário de Saúde Preventiva</h1>
 
-        <section id="formulario">
-            <form id="cadastroForm">
-                <fieldset>
-                    <h5> Saúde Preventiva </h5>
-    <label for="name">Nome Completo:</label>
-    <input type="text" id="name" name="name" placeholder="Insira seu nome" required> <br>
+    <section id="formulario">
+        <form id="cadastroForm">
+            <fieldset>
+                <h5> Saúde Preventiva </h5>
+                <label for="nomeCompleto">Nome Completo:</label>
+                <input type="text" id="nomeCompleto" name="nomeCompleto" placeholder="Insira seu nome" required> <br>
 
-    <label for="age">Idade:</label>
-    <input type="number" id="age" name="age" placeholder="Insira sua idade" min="1" required> <br> 
+                <label for="idade">Idade:</label>
+                <input type="number" id="idade" name="idade" placeholder="Insira sua idade" min="1" required> <br> 
 
-    <label for="exercise">Faz exercícios regularmente?</label>
-    <select id="exercise" name="exercise" required>
-        <option value="">Selecione</option>
-        <option value="sim">Sim</option>
-        <option value="nao">Não</option>
-    </select> <br>
+                <label for="exercicioRegular">Faz exercícios regularmente?</label>
+                <select id="exercicioRegular" name="exercicioRegular" required>
+                    <option value="">Selecione</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select> <br>
 
-    <label for="diet">Segue uma dieta equilibrada?</label>
-    <select id="diet" name="diet" required>
-        <option value="">Selecione</option>
-        <option value="sim">Sim</option>
-        <option value="nao">Não</option>
+                <label for="dietaEquilibrada">Segue uma dieta equilibrada?</label>
+                <select id="dietaEquilibrada" name="dietaEquilibrada" required>
+                    <option value="">Selecione</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select> <br>
+
+                <label for="checkupsRegulares">Realiza check-ups médicos regulares?</label>
+                <select id="checkupsRegulares" name="checkupsRegulares" required>
+                    <option value="">Selecione</option>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não
+
     </select> <br>
 
     <label for="checkup">Realiza check-ups médicos regulares?</label>
@@ -70,32 +76,37 @@
         <option value="nao">Não</option>
     </select> 
     <br>
-    <button type="submit" onclick="enviarDados()"> Enviar </button>
+    <button type="submit" onclick="enviarDados(event)"> Enviar </button>
+
 </fieldset>
 </form>
 </section>
 <section id="tabela">
     <details>
-     <summary> <h5> Dados Armazenados </h5></summary> 
-      <table border="1" id="dadosTable">
-       <thead> 
-         <tr>
-           <th colspan="5">Dados dos Usuários cadastrados</th>
-          </tr>
-         <tr>
-           <th>Nome</th>
-           <th>Data de nascimento</th>
-           <th>Telefone</th>
-           <th >CPF</th>
-           <th>E-mail</th>
-         </tr>
-     </thead>
-      <tbody>
-
-      </tbody>
-   </table>
-   </details>
+        <summary><h5>Dados Armazenados</h5></summary> 
+        <table border="1" id="dadosTable">
+            <thead> 
+                <tr>
+                    <th colspan="8">Dados dos Usuários Cadastrados</th>
+                </tr>
+                <tr>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                    <th>Exercício</th>
+                    <th>Dieta</th>
+                    <th>Check-up</th>
+                    <th>Vacinas</th>
+                    <th>Saúde Mental</th>
+                    <th>Higiene</th>
+                </tr>
+            </thead>
+            <tbody>
+              
+            </tbody>
+        </table>
+    </details>
 </section>
+
 </main>
     <section>Alimentação Saudável
         Uma dieta balanceada é fundamental para a prevenção de várias doenças, como obesidade, diabetes e hipertensão. A
@@ -126,7 +137,8 @@
         Manter bons hábitos de higiene pessoal, como lavar as mãos frequentemente e cuidar da higiene bucal, e cuidados
         com o ambiente ao redor são essenciais para prevenir infecções e outras doenças.</section>
 
-        <script src="./saude.js"></script>
+        <script src="./js/saude.js"></script>
+
 </body>
 
 </html>
