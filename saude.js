@@ -1,36 +1,82 @@
-function enviarDados(event) {
-    event.preventDefault(); // Impede o envio padrão do formulário
+// Recuperando os dados do Local Storage
+let dados = JSON.parse(localStorage.getItem('dados')) || [];
 
-    // Obtém os valores dos campos com os novos IDs
-    const nome = document.getElementById("nomeCompleto").value;
-    const idade = document.getElementById("idade").value;
-    const exercicio = document.getElementById("exercicioRegular").value;
-    const dieta = document.getElementById("dietaEquilibrada").value;
-    const checkup = document.getElementById("checkupsRegulares").value;
-    const vacinas = document.getElementById("vacinas").value;
-    const saudeMental = document.getElementById("saudeMental").value;
-    const higiene = document.getElementById("higiene").value;
+let nomeCompleto = document.getElementById('nomeCompleto');
+let idade = document.getElementById('idade');
+let exercicioRegular = document.getElementById('exercicioRegular');
+let dietaEquilibrada = document.getElementById('dietaEquilibrada');
+let checkupsRegulares = document.getElementById('checkupsRegulares');
+let checkup = document.getElementById('checkup');
+let vaccination = document.getElementById('vaccination');
+let mentalHealth = document.getElementById('mental-health');
+let higiene = document.getElementById('hygiene');
+
+// Cadastro de dados
+document.getElementById('cadastroForm').addEventListener('submit', function (e) {
+    e.preventDefault();
 
     // Verifica se todos os campos estão preenchidos
-    if (nome && idade && exercicio && dieta && checkup && vacinas && saudeMental && higiene) {
-        // Cria uma nova linha na tabela
-        const tableBody = document.getElementById("dadosTable").getElementsByTagName('tbody')[0];
-        const newRow = tableBody.insertRow();
-
-        // Insere os dados nas células
-        newRow.insertCell(0).innerText = nome;
-        newRow.insertCell(1).innerText = idade;
-        newRow.insertCell(2).innerText = exercicio;
-        newRow.insertCell(3).innerText = dieta;
-        newRow.insertCell(4).innerText = checkup;
-        newRow.insertCell(5).innerText = vacinas;
-        newRow.insertCell(6).innerText = saudeMental;
-        newRow.insertCell(7).innerText = higiene;
-
-        // Limpa o formulário
-        document.getElementById("cadastroForm").reset();
-    } else {
-        alert("Por favor, preencha todos os campos.");
+    if (!nomeCompleto.value || !idade.value || !exercicioRegular.value || 
+        !dietaEquilibrada.value || !checkupsRegulares.value || 
+        !checkup.value || !vaccination.value || !mentalHealth.value || 
+        !higiene.value) {
+        alert("Por favor, preencha todos os campos obrigatórios.");
+        return;
     }
+
+    // Criando objeto com os dados do formulário
+    const informacao = {
+        nomeCompleto: nomeCompleto.value,
+        idade: idade.value,
+        exercicioRegular: exercicioRegular.value,
+        dietaEquilibrada: dietaEquilibrada.value,
+        checkupsRegulares: checkupsRegulares.value,
+        checkup: checkup.value,
+        vaccination: vaccination.value,
+        mentalHealth: mentalHealth.value,
+        higiene: higiene.value,
+    };
+
+    // Adicionando dados ao LocalStorage
+    dados.push(informacao);
+    localStorage.setItem('dados', JSON.stringify(dados));
+    
+    // Limpar os campos do formulário
+    nomeCompleto.value = '';
+    idade.value = '';
+    exercicioRegular.value = '';
+    dietaEquilibrada.value = '';
+    checkupsRegulares.value = '';
+    checkup.value = '';
+    vaccination.value = '';
+    mentalHealth.value = '';
+    higiene.value = '';
+
+    atualizarTabela();
+});
+
+// Exibir tabela
+function atualizarTabela() {
+    const tabela = document.querySelector('#dadosTable tbody');
+    tabela.innerHTML = ''; // Limpa a tabela antes de atualizar
+
+    // Exibindo dados na tabela
+    dados.forEach((informacao) => {
+        const linha = document.createElement('tr');
+        linha.innerHTML = `
+            <td>${informacao.nomeCompleto}</td>
+            <td>${informacao.idade}</td>
+            <td>${informacao.exercicioRegular}</td>
+            <td>${informacao.dietaEquilibrada}</td>
+            <td>${informacao.checkupsRegulares}</td>
+            <td>${informacao.checkup}</td>
+            <td>${informacao.vaccination}</td>
+            <td>${informacao.mentalHealth}</td>
+            <td>${informacao.higiene}</td>
+        `;
+        tabela.appendChild(linha);
+    });
 }
 
+// Atualizar a tabela ao carregar a página
+window.onload = atualizarTabela;
