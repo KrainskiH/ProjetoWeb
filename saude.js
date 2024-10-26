@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let saudeMental = document.getElementById('saudeMental');
     let higiene = document.getElementById('higiene');
 
-    let editIndex = -1; // Índice para edição de um item
+    let editIndex = -1; // Índice para edição de um item 
 
     document.getElementById('cadastroForm').addEventListener('submit', function (e) {
         e.preventDefault();
