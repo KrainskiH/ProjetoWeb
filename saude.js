@@ -7,9 +7,9 @@ let exercicioRegular = document.getElementById('exercicioRegular');
 let dietaEquilibrada = document.getElementById('dietaEquilibrada');
 let checkupsRegulares = document.getElementById('checkupsRegulares');
 let checkup = document.getElementById('checkup');
-let vaccination = document.getElementById('vaccination');
-let mentalHealth = document.getElementById('mental-health');
-let higiene = document.getElementById('hygiene');
+let vacinas = document.getElementById('vacinas');
+let saudeMental = document.getElementById('saudeMental');
+let higiene = document.getElementById('higiene');
 
 // Cadastro de dados
 document.getElementById('cadastroForm').addEventListener('submit', function (e) {
@@ -18,7 +18,7 @@ document.getElementById('cadastroForm').addEventListener('submit', function (e) 
     // Verifica se todos os campos estão preenchidos
     if (!nomeCompleto.value || !idade.value || !exercicioRegular.value || 
         !dietaEquilibrada.value || !checkupsRegulares.value || 
-        !checkup.value || !vaccination.value || !mentalHealth.value || 
+        !checkup.value || !vacinas.value || !saudeMental.value || 
         !higiene.value) {
         alert("Por favor, preencha todos os campos obrigatórios.");
         return;
@@ -32,8 +32,8 @@ document.getElementById('cadastroForm').addEventListener('submit', function (e) 
         dietaEquilibrada: dietaEquilibrada.value,
         checkupsRegulares: checkupsRegulares.value,
         checkup: checkup.value,
-        vaccination: vaccination.value,
-        mentalHealth: mentalHealth.value,
+        vacinas: vacinas.value,
+        saudeMental: saudeMental.value,
         higiene: higiene.value,
     };
 
@@ -48,8 +48,8 @@ document.getElementById('cadastroForm').addEventListener('submit', function (e) 
     dietaEquilibrada.value = '';
     checkupsRegulares.value = '';
     checkup.value = '';
-    vaccination.value = '';
-    mentalHealth.value = '';
+    vacinas.value = '';
+    saudeMental.value = '';
     higiene.value = '';
 
     atualizarTabela();
@@ -70,8 +70,8 @@ function atualizarTabela() {
             <td>${informacao.dietaEquilibrada}</td>
             <td>${informacao.checkupsRegulares}</td>
             <td>${informacao.checkup}</td>
-            <td>${informacao.vaccination}</td>
-            <td>${informacao.mentalHealth}</td>
+            <td>${informacao.vacinas}</td>
+            <td>${informacao.saudeMental}</td>
             <td>${informacao.higiene}</td>
         `;
         tabela.appendChild(linha);
