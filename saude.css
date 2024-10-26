@@ -178,3 +178,11 @@ small{
     font-size: small;
 
 }
+#Benefícios {
+    background-color: azure;
+    border-radius: 15px;
+    padding: 20px;
+    font-size: 20px;
+    margin: 25px;
+    text-indent: 40px; 
+}
