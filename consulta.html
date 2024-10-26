@@ -3,23 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./pasta de css/agendamento.css">
+    <link rel="stylesheet" href="./pasta de css/consulta.css">
     <link rel="icon" href="./img/fotor-20241020112638.ico">
     <title> Agendamento da sua consulta </title>
 </head>
 <body>
-    <header>
-        <nav id="menu">
-            <a href="./site.html"> INÍCIO </a> 
-            <a href="./consulta.html"> AGENDAMENTO </a>
-            <a href="./saude.html"> SAÚDE saiba mais </a>
-            <a href="./cadastro.html"> CADASTRO </a>
-        </nav>
-</header>
-<h1> Agendamento da sua consulta! <br> Preencha o formulario a seguir. </h1> 
+  <header>
+     <nav id="menu">
+       <a href="./site.html"> INÍCIO </a> 
+       <a href="./consulta.html"> AGENDAMENTO </a>
+       <a href="./saude.html"> SAÚDE saiba mais </a>
+       <a href="./cadastro.html"> CADASTRO </a>
+     </nav>
+        
+  </header>
+    <h1> Agendamento da sua consulta! <br> Preencha o formulario a seguir. </h1> 
 <main>
+  <section id="formulario">
+    <form id="formInformacao">
+ <fieldset>
+    <h4>Preencha seu agendamento</h4>
+      <label for="especialidade">Qual especialidade pretende se consultar:</label>
+      <input type="text" id="especialidade" name="especialidade" placeholder="Especialidade que deseja" required><br>
+      <label for="exame">Qual exame pretende realizar:</label>
+      <input type="text" id="exame" name="exame" placeholder="Exame que deseja" required><br>
+      <label for="data">Data do agendamento:</label>
+      <input type="date" id="data" name="data" placeholder="Data do agendamento" required><br>
+      <label for="horario">Horário do agendamento:</label>
+      <input type="text" id="horario" name="horario" placehouder="Horario" required><br>
+      <label for="local">Local da consulta:</label>
+      <input type="text" id="local" name="local" placeholder="Local da consulta" required><br>
+      <label for="contato">Além dos cadastrados, informe mas algum meio de contato:</label>
+      <input type="text" id="contato" name="contato" placeholder="Meio para contato" required>
+      <button type="submit" onclick="enviarDados()"> Enviar </button>
+   </fieldset>
+    </form>
+  </section>
+
+<section id="tabela">
+             <details>
+              <summary> <h5>Dados Armazenados</h5></summary> 
+               <table border="1" id="dadosTable">
+                <thead> 
+                  <tr>
+                    <th colspan="6">Dados dos Usuários cadastrados</th>
+                   </tr>
+                  <tr>
+                    <th>Especialidade</th>
+                    <th>Exame</th>
+                    <th>Horário do agendamento</th>
+                    <th>Data do agendamento</th>
+                    <th >Local da consulta</th>
+                    <th>Ações</th>
+                  </tr>
+              </thead>
+               <tbody>
+               </tbody>
+            </table>
+            </details>
+    </section>
     </main>
-    <script src="./site.js"></script>
+
+    <section id="rodape">
+        <ul class="email">
+            <li> <h5> E-mail </h5></li>
+            <li> ✉️ atendimento@saudemais.coop.br </li>
+        </ul>
+            <ul class="horario">
+            <li> <h5>Horário de Atendimento </h5></li>
+            <li>🕗 Segunda a sexta: 8h às 17h </li>
+
+            <li>🕗 Sábado: 9h às 17h </li>
+            <li> Sempre com o numero da carteirinha em mãos!</li>
+            </ul>
+    </section>
+     <footer> 
+        <ul class="footer">
+            <li><small>&copy;Saúde Mais. Todos os Direitos reservados &copy;2024</small></li>
+        </ul>
+     </footer>
+    <script src="./js's/consulta.js"></script>
     
 </body>
 </html>
