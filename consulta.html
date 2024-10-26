@@ -11,8 +11,8 @@
   <header>
      <nav id="menu">
        <a href="./site.html"> INÍCIO </a> 
-       <a href="./consulta.html"> AGENDAMENTO </a>
-       <a href="./saude.html"> SAÚDE saiba mais </a>
+       <a href="./consulta.html"> CONSULTAS </a>
+       <a href="./saude.html"> SAÚDE PREVENTIVA </a>
        <a href="./cadastro.html"> CADASTRO </a>
      </nav>
         
@@ -24,17 +24,17 @@
  <fieldset>
     <h4>Preencha seu agendamento</h4>
       <label for="especialidade">Qual especialidade pretende se consultar:</label>
-      <input type="text" id="especialidade" name="especialidade" placeholder="Especialidade que deseja" required><br>
+      <input type="text" id="especialidade" name="especialidade" placeholder="Angiologista, Alergista. . ." required><br>
       <label for="exame">Qual exame pretende realizar:</label>
-      <input type="text" id="exame" name="exame" placeholder="Exame que deseja" required><br>
+      <input type="text" id="exame" name="exame" placeholder="Digite aqui" required><br>
       <label for="data">Data do agendamento:</label>
-      <input type="date" id="data" name="data" placeholder="Data do agendamento" required><br>
+      <input type="date" id="data" name="data" required><br>
       <label for="horario">Horário do agendamento:</label>
-      <input type="text" id="horario" name="horario" placehouder="Horario" required><br>
+      <input type="text" id="horario" name="horario" placeholder="00:00" required><br>
       <label for="local">Local da consulta:</label>
-      <input type="text" id="local" name="local" placeholder="Local da consulta" required><br>
+      <input type="text" id="local" name="local" placeholder="Digite aqui" required><br>
       <label for="contato">Além dos cadastrados, informe mas algum meio de contato:</label>
-      <input type="text" id="contato" name="contato" placeholder="Meio para contato" required>
+      <input type="text" id="contato" name="contato" placeholder="Digite aqui" required>
       <button type="submit" onclick="enviarDados()"> Enviar </button>
    </fieldset>
     </form>
