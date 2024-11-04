@@ -29,11 +29,6 @@
     transform: scale(1.05);
 
 }
-#menu a:last-child{
-    float: right;
-    background-color: #043142ec;
-    border-top-left-radius: 24px;
-}
 body{
     font-family: "Cabin", sans-serif;
     color: #212529;

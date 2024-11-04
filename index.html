@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +8,25 @@
     <link rel="stylesheet" href="./pastaCSS/cadastro.css">
     <link rel="icon" href="./img/fotor-20241020112638.ico">
 </head>
+
 <body>
-    <header>
-        <nav id="menu">
-            <a href="./site.html"> INÍCIO </a> 
-            <a href="./consulta.html"> CONSULTAS </a> 
-            <a href="./saude.html"> SAÚDE PREVENTIVA </a>
-            <a href="./cadastro.html"> CADASTRO </a>
-        </nav>
-        <main>     
-            <section id="formulario">
-                <form id="formInformacao">
-                    <fieldset>
-                        <h5> Realize o seu Login! </h5>
-                        <label for="user">Usuario</label>
-                        <input type="text" id="user" name="user" placeholder="Nome do Usuário" autofocus required>
-                        <label for="senha">Crie uma senha: </label>
-                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required> <br>
-    
-                        <div>
-                            <p> Ainda não tem cadastro? <a href="cadastro.html">Cadastra-se aqui!</a></p>
-                        </div>
-    
-                        <button type="submit" id="btnEnviar">Entrar</button>
-                    </fieldset>
-                </form>
-            </section>
-            <script src="pastaJavaScript/login.js"></script>
+    <main>
+        <section id="formulario">
+            <form id="loginForm" onsubmit="login(event)">
+            <fieldset>
+                <h5> Realize o seu Login! </h5>
+                <label for="nome">Usuario</label>
+                <input type="text" id="nome" name="nome" placeholder="Nome do Usuário" autofocus required>
+                <label for="senha"> Senha </label>
+                <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required> <br>
+
+                <div>
+                    <p> Ainda não tem cadastro? <a href="cadastro.html">Cadastra-se aqui!</a></p>
+                </div>
+                <button type="submit" id="btnEnviar">Entrar</button>
+                </fieldset>
+            </form>
+        </section>
+    <script src="pastaJavaScript/login.js"></script>
 </body>
 </html>

@@ -1,11 +1,19 @@
 // Recuperando os dados do Local Storage ou inicializando uma lista vazia se não houver dados
 let dados = JSON.parse(localStorage.getItem('dadosCadastro')) || []; // Removido espaço extra
 
+
 let nome = document.getElementById('nome');
 let dataNascimento = document.getElementById('data');
 let cpf = document.getElementById('CPF');
 let email = document.getElementById('email');
 let telefone = document.getElementById('number');
+let senha = document.getElementById('senha');
+
+function salvarusuario(){
+    localStorage.setItem("registeredPassword", senha.value);
+    localStorage.setItem("registeredUser", nome.value);    
+}
+
 
 // Recuperando QueryParam
 const key = new URLSearchParams(window.location.search).get('chave');
@@ -54,11 +62,14 @@ document.getElementById('formInformacao').addEventListener('submit', function (e
         dados[key] = informacao;
     }
 
+      // Salva os dados do usuário e senha para o login
+      salvarusuario();
+
     // Atualizando o LocalStorage
     localStorage.setItem('dadosCadastro', JSON.stringify(dados)); // Corrigido: removido espaço extra
     
     // Redireciona para a página de exibição da tabela
-    window.location.href = "./cadastro.html";
+    window.location.href = "./index.html";
 });
 
 // Atualizar a tabela ao carregar a página
@@ -99,4 +110,3 @@ function removerInformacao(index) {
     localStorage.setItem('dadosCadastro', JSON.stringify(dados));
     atualizarTabela();
 }
-

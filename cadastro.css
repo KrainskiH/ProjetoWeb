@@ -4,40 +4,9 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: auto;
 }
-
-#menu{
-    background-color: #0d4870;
-    border-right: #0d4870;
-}
-#menu nav{
-    max-width: 800px;
-}
-
-#menu a{
-    display: inline-block;
-    color:azure;
-    text-decoration: none;
-    font-size: 19px;
-    font-weight: bold;
-    padding: 20px;
-    transition: background-color .6s;
-    
-}
-#menu a:hover{
-    background-color: rgb(27, 75, 104);
-    border-radius: 10px;
-    transform: scale(1.05);
-
-}
-#menu a:last-child{
-    float: right;
-    background-color: #043142ec;
-    border-top-left-radius: 24px;
-}
 body{
     font-family: "Cabin", sans-serif;
     color: #212529;
-    background-color: #fff;
     text-align: left;
     margin: 0;
     background-color: #c7edf8;
