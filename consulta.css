@@ -60,7 +60,7 @@ label{
     margin-bottom: 10px;
     text-align: center;
 }
-input[type="text"], input[type="text"], input[type="date"], input[type="text"], input[type="text"], input[type="text"], option, select {
+input[type="text"], input[type="text"], input[type="date"], input[type="time"], input[type="text"], input[type="text"], option, select {
     width: 100%;
     max-width: 300px; 
     padding: 10px; 
